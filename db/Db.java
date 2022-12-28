@@ -1,6 +1,8 @@
 package db;
 
 import java.util.ArrayList;
+
+import model.AddressModel;
 import model.SubscriberModel;
 import model.TelephoneMadel;
 
@@ -8,7 +10,7 @@ import model.TelephoneMadel;
 public class Db {
     ArrayList<SubscriberModel> subscriber = new ArrayList<>();
     ArrayList<TelephoneMadel> telephone = new ArrayList<>();
-    ArrayList<address> address = new ArrayList<>();
+    ArrayList<AddressModel> address = new ArrayList<>();
 }
 
 public class Infrastructure {
@@ -26,7 +28,7 @@ public class Infrastructure {
 
     Db init() {
         db = new Db();
-        SubscriberModel s1 = new SubscriberModel(1, "Сергей", "Соколов", "08.01.1993");
+        SubscriberModel s1 = new SubscriberModel(1, "Сергей", "Соколов", "08.01.93");
         SubscriberModel s2 = new SubscriberModel(2, "Кирилл", "Ярославцев", "17.09.1990");
         SubscriberModel s3 = new SubscriberModel(3, "Мария", "Суворова", "12.04.1997");
 
